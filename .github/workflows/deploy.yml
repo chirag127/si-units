@@ -5,14 +5,13 @@ on:
   push:
     paths: ['data/**']
 
-
 permissions:
   contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: pages-si-units
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -43,6 +42,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v6
+        with:
+          enablement: true
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
