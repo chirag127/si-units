@@ -15,6 +15,24 @@
     }
   ],
   "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "SI Units and Measurements data",
+        "description": "All SI units with symbols, dimensions, and conversion factors",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/data/units": {
       "get": {
         "summary": "SI Units and Measurements",

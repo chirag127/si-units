@@ -27,7 +27,7 @@ const data = await res.json();
 
 - Source: BIPM
 - License: public-domain
-- Last updated: `2026-08-25T02:26:41.148Z`
+- Last updated: `2026-08-25T02:56:36.876Z`
 
 See `data/` for raw JSON and `data/schema.json` for the schema.
 
